@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fafaf7" />
+  <meta name="description" content="A little more clarity for your money. Spend smart. Live better." />
+  <title>money L — Spend smart. Live better.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="money L home">
+        <span class="brand-mark">m<span>.</span></span>
+        <span class="brand-name">money <b>L</b></span>
+      </a>
+      <div class="workspace-label">YOUR SPACE</div>
+      <nav class="side-nav" aria-label="Main navigation" id="sideNav"></nav>
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-note">
+        <div class="note-spark">✳</div>
+        <p>Small steps today,<br /><strong>big freedom tomorrow.</strong></p>
+        <div class="note-progress"><span></span></div>
+        <small>You're building good habits</small>
+      </div>
+      <button class="profile-button" id="profileButton">
+        <span class="avatar">A</span>
+        <span class="profile-copy"><b>Alex Morgan</b><small>Personal account</small></span>
+        <span class="profile-dots">•••</span>
+      </button>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">m<span>.</span></span><span class="brand-name">money <b>L</b></span></div>
+        <div class="breadcrumb"><span>Workspace</span><i>/</i><strong id="pageCrumb">Dashboard</strong></div>
+        <div class="top-actions">
+          <button class="icon-button theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode"></button>
+          <button class="icon-button notification-button" id="notificationButton" aria-label="Notifications" title="Notifications"><span class="notification-dot"></span></button>
+          <span class="top-divider"></span>
+          <div class="today-label" id="todayLabel"></div>
+          <button class="mobile-menu icon-button" id="mobileMenu" aria-label="Open menu">☰</button>
+        </div>
+      </header>
+      <div class="page-content" id="pageContent"></div>
+      <nav class="bottom-nav" id="bottomNav" aria-label="Mobile navigation"></nav>
+    </main>
+  </div>
+  <div class="modal-layer" id="modalLayer" aria-hidden="true"></div>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
